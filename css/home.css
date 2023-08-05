@@ -1,0 +1,143 @@
+html, body {
+  height: 100vh;
+}
+
+.container-fluid {
+  margin-left: 15%;
+  width: 85%;
+  background: #f1f3f6;
+  padding: 1px 0 0 0;
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 0;
+  max-width: 98%;
+  margin: 1%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.user_options button {
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 36px;
+  background-color: #ffffff;
+  color: #ff5252;
+  border: none;
+  outline: none;
+}
+
+.user_options button > i:hover {
+  animation-name: rotate_wheel;
+  animation-duration: 2s;
+}
+
+@keyframes rotate_wheel {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+.user_options button:focus {
+  color: #02b6ff;
+}
+
+#mark {
+  display: none;
+  position: fixed;
+  transform: translate(40px, -24px);
+}
+
+.user_options .options {
+  position: fixed;
+  right: 1%;
+  top : 12%;
+  background-color: #111111;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.options li {
+  margin: 15px;
+}
+
+.options li > a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.options li > a > span {
+  margin-left: 10px;
+}
+
+.options a:hover {
+  color: #ff5252;
+}
+
+.options a:focus {
+  color: #02b6ff;
+}
+
+.dashboard-stats {
+  background-color: #f1f3f6;
+  margin: 2%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #02b6ff;
+  cursor: pointer;
+}
+
+.todays-report {
+  margin: 2% 0;
+  padding: 5%;
+  border-radius: 5px;
+  border: 1px solid #ff5252;
+}
+
+#add_new_customer_model, #add_new_supplier_model, #add_new_medicine_model {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.4);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-dialog {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f3f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff5252;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

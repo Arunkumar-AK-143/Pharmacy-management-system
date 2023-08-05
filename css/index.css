@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body {
+  background-image: url("../images/pills2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.card {
+  width:60%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.logo .logo-caption {
+	font-family: 'Poiret One', cursive;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.logo .profile {
+  margin-left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%);
+}
+
+.logo .tweak {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.input-group-prepend {
+  min-width: 40px;
+}
+
+.login-form .input-group-text {
+  width: 100%;
+  background: #ff5252;
+  border: 0px;
+}
+
+.login-form input::placeholder, .login-form textarea::placeholder {
+    color: #dddddd;
+}
+
+.login-form input, .login-form textarea {
+  background: #444444;
+	border: 0px;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}
+
+.login-form input:focus, .login-form textarea:focus {
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+  background-color: #333;
+  color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+}
+
+.login-form button.btn-custom {
+  background: #ff5252;
+	border-color: rgba(48, 46, 45, 1);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.login-form button.btn-custom:hover{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background: rgba(48, 46, 45, 1);
+	border-color: #ff5252;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
